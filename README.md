@@ -1,2 +1,10 @@
-# coddy-python
-Archive of daily python challenges from coddy.com
+# Coddy - daily python challenges
+
+## 2026
+
+### August
+
+#### 25 - Welcome Home Organizer
+Create a program that helps organize a new home with three essential tasks: building a room inventory system, calculating daily calorie needs for the homeowner's new active lifestyle, and ensuring furniture dimensions fit within room constraints.
+
+For the inventory, read room-item pairs and then answer queries about where items are located. For calories, use the formula: base = weight × 15, adjust for activity level (sedentary +0%, moderate +20%, active +40%), then adjust for goal (lose -500, maintain +0, gain +500). For furniture, clip each dimension to fit within the maximum room dimensions—if a piece is too large, reduce it to the room's limit.
