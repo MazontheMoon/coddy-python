@@ -4,6 +4,11 @@
 
 ### August
 
+#### 26 - Yard Sale Helper
+Create a program that helps manage a neighborhood yard sale. You'll receive a list of item prices and need to calculate the total revenue from the first two items by multiplying their prices together. Then, check if a seller's phone number follows the valid format: XXX-XXX-XXXX (like 555-123-4567).
+
+Print the product of the first two prices on one line, then print "Valid" or "Invalid" based on whether the phone number matches the correct format.
+
 #### 25 - Welcome Home Organizer
 Create a program that helps organize a new home with three essential tasks: building a room inventory system, calculating daily calorie needs for the homeowner's new active lifestyle, and ensuring furniture dimensions fit within room constraints.
 
