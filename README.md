@@ -4,6 +4,14 @@
 
 ### August
 
+### 27 - Python Variables with Casimiroa
+Define two variables: fruit with the value "Casimiroa" and color with the value "green". Print a sentence using these variables.
+'''
+fruit = "Casimiroa"
+color = "green"
+print(f"The {fruit} is {color}.")
+'''
+
 #### 26 - Yard Sale Helper
 Create a program that helps manage a neighborhood yard sale. You'll receive a list of item prices and need to calculate the total revenue from the first two items by multiplying their prices together. Then, check if a seller's phone number follows the valid format: XXX-XXX-XXXX (like 555-123-4567).
 
