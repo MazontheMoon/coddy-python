@@ -4,7 +4,15 @@
 
 ### August
 
-### 27 - Python Variables with Casimiroa
+#### 28 - The Elysian Equation
+Replace the question marks in the variables x and y so that result equals 21.
+
+x = 5
+y = 2
+result = (x + y) * (x - y)
+print("result =", result)
+
+#### 27 - Python Variables with Casimiroa
 Define two variables: fruit with the value "Casimiroa" and color with the value "green". Print a sentence using these variables.
 '''
 fruit = "Casimiroa"
