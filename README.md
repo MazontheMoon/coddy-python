@@ -4,6 +4,15 @@
 
 ### August
 
+#### 29 - Vexillate String Operations
+Beginner
+Store a string input in input_string.
+
+Create and print a new string: "Vexillate says: " followed by input_string.
+input_string = input() # Don't change this line
+output_string = "Vexillate says: " + input_string
+print(output_string)
+
 #### 28 - The Elysian Equation
 Replace the question marks in the variables x and y so that result equals 21.
 
