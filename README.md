@@ -4,7 +4,7 @@
 
 ### August
 
-#### Superexiguity Challenge
+#### 30 - Superexiguity Challenge
 Write a program that receives an integer as input and prints 'Even' if the number is even and 'Odd' if the number is odd.
 
 number = int(input())
