@@ -4,6 +4,15 @@
 
 ### August
 
+#### Superexiguity Challenge
+Write a program that receives an integer as input and prints 'Even' if the number is even and 'Odd' if the number is odd.
+
+number = int(input())
+if number % 2 == 0:
+    print('Even')
+else:
+    print('Odd')
+
 #### 29 - Vexillate String Operations
 Beginner
 Store a string input in input_string.
