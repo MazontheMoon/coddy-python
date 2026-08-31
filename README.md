@@ -4,6 +4,12 @@
 
 ### August
 
+#### 31 - Welcome to the Eld World
+Store Welcome to the Eld World in a variable eld. Print the variable followed by ! using print.
+
+eld = 'Welcome to the Eld World'
+print(eld + '!')
+
 #### 30 - Superexiguity Challenge
 Write a program that receives an integer as input and prints 'Even' if the number is even and 'Odd' if the number is odd.
 
