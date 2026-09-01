@@ -2,6 +2,22 @@
 
 ## 2026
 
+### September
+
+#### 1 - Mystery of the Trireme
+Fill in the missing values for ship_speed and rowers_strength so that the code inside the if statement will be executed.
+
+ship_speed = 15
+rowers_strength = 6
+
+# Don't change below this line
+power = 0
+if ship_speed > 10 and rowers_strength > 5:
+    power = 5
+
+power += 3
+print("power =", power)
+
 ### August
 
 #### 31 - Welcome to the Eld World
