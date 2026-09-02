@@ -4,6 +4,12 @@
 
 ### September
 
+#### 2 - String Repetition with Arrogator
+Define a string variable phrase with the value 'arrogator ' and print it 5 times in one line.
+
+phrase = 'arrogator '
+print(phrase * 5)
+
 #### 1 - Mystery of the Trireme
 Fill in the missing values for ship_speed and rowers_strength so that the code inside the if statement will be executed.
 
