@@ -4,6 +4,24 @@
 
 ### September
 
+#### 3 - Computer Lab Budget Calculator
+Write a function calculate_lab_budget that takes computer_cost, monitor_cost and returns a formatted budget breakdown string.
+
+The function calculates the total cost for setting up the community center's computer lab and creates a budget summary.
+
+Parameters:
+
+computer_cost (int): Cost of computers in dollars
+monitor_cost (int): Cost of monitors in dollars
+Returns: Budget breakdown string. Format: Computers: $X, Monitors: $Y, Total: $Z
+
+
+```
+def calculate_lab_budget(computer_cost, monitor_cost):
+    total_cost = computer_cost + monitor_cost
+    return f"Computers: ${computer_cost}, Monitors: ${monitor_cost}, Total: ${total_cost}"
+```
+
 #### 2 - String Repetition with Arrogator
 Define a string variable phrase with the value 'arrogator ' and print it 5 times in one line.
 
