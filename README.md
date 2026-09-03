@@ -10,7 +10,6 @@ Write a function calculate_lab_budget that takes computer_cost, monitor_cost and
 The function calculates the total cost for setting up the community center's computer lab and creates a budget summary.
 
 Parameters:
-
 computer_cost (int): Cost of computers in dollars
 monitor_cost (int): Cost of monitors in dollars
 Returns: Budget breakdown string. Format: Computers: $X, Monitors: $Y, Total: $Z
@@ -24,13 +23,14 @@ def calculate_lab_budget(computer_cost, monitor_cost):
 
 #### 2 - String Repetition with Arrogator
 Define a string variable phrase with the value 'arrogator ' and print it 5 times in one line.
-
+```
 phrase = 'arrogator '
 print(phrase * 5)
+```
 
 #### 1 - Mystery of the Trireme
 Fill in the missing values for ship_speed and rowers_strength so that the code inside the if statement will be executed.
-
+```
 ship_speed = 15
 rowers_strength = 6
 
@@ -41,48 +41,50 @@ if ship_speed > 10 and rowers_strength > 5:
 
 power += 3
 print("power =", power)
-
+```
 ### August
 
 #### 31 - Welcome to the Eld World
 Store Welcome to the Eld World in a variable eld. Print the variable followed by ! using print.
-
+```
 eld = 'Welcome to the Eld World'
 print(eld + '!')
-
+```
 #### 30 - Superexiguity Challenge
 Write a program that receives an integer as input and prints 'Even' if the number is even and 'Odd' if the number is odd.
-
+```
 number = int(input())
 if number % 2 == 0:
     print('Even')
 else:
     print('Odd')
-
+```
 #### 29 - Vexillate String Operations
 Beginner
 Store a string input in input_string.
 
 Create and print a new string: "Vexillate says: " followed by input_string.
+
+```
 input_string = input() # Don't change this line
 output_string = "Vexillate says: " + input_string
 print(output_string)
-
+```
 #### 28 - The Elysian Equation
 Replace the question marks in the variables x and y so that result equals 21.
-
+```
 x = 5
 y = 2
 result = (x + y) * (x - y)
 print("result =", result)
-
+```
 #### 27 - Python Variables with Casimiroa
 Define two variables: fruit with the value "Casimiroa" and color with the value "green". Print a sentence using these variables.
-'''
+```
 fruit = "Casimiroa"
 color = "green"
 print(f"The {fruit} is {color}.")
-'''
+```
 
 #### 26 - Yard Sale Helper
 Create a program that helps manage a neighborhood yard sale. You'll receive a list of item prices and need to calculate the total revenue from the first two items by multiplying their prices together. Then, check if a seller's phone number follows the valid format: XXX-XXX-XXXX (like 555-123-4567).
