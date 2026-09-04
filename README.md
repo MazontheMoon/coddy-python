@@ -4,6 +4,15 @@
 
 ### September
 
+#### 4 - Leechkin Loop
+Print numbers from 1 to 10, skipping 7.
+```
+for i in range(1, 11):
+    if i == 7:
+        continue
+    print(i)
+```
+
 #### 3 - Computer Lab Budget Calculator
 Write a function calculate_lab_budget that takes computer_cost, monitor_cost and returns a formatted budget breakdown string.
 
