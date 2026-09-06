@@ -4,6 +4,54 @@
 
 ### September
 
+#### 6 - Strifeproof Multiplication
+You are given two numbers as input, num1 and num2.
+
+Your task is to calculate their product and store the result in a variable named product.
+
+Check the test cases to see the inputs and the expected outputs.
+```
+num1 = int(input()) # Don't change this line
+num2 = int(input()) # Don't change this line
+product = num1 * num2
+print("product =", product) # Don't change this line
+```
+
+#### 5 - Reunion Helper
+Create a program that helps organize a family reunion with two tasks. First, read two integers and find the leading digit of the first number raised to the power of the second (this helps estimate large quantities). Then, read a text message and rearrange it by moving all consonants to the beginning while keeping vowels (a, e, i, o, u), spaces, and punctuation after them—all in their original order.
+```
+# Read the two integers
+base = int(input())
+exponent = int(input())
+
+# Calculate base^exponent and find the leading digit
+result = base ** exponent
+leading_digit = int(str(result)[0])
+print(leading_digit)
+
+# Read the text message
+message = input()
+
+# Define vowels (both lowercase and uppercase)
+vowels = "aeiouAEIOU"
+
+# Separate consonants and non-consonants (vowels, spaces, punctuation)
+consonants = []
+non_consonants = []
+
+for char in message:
+    if char.isalpha() and char not in vowels:
+        # It's a consonant
+        consonants.append(char)
+    else:
+        # It's a vowel, space, or punctuation
+        non_consonants.append(char)
+
+# Combine consonants first, then non-consonants
+rearranged = ''.join(consonants) + ''.join(non_consonants)
+print(rearranged)
+```
+
 #### 4 - Leechkin Loop
 Print numbers from 1 to 10, skipping 7.
 ```
