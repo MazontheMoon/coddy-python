@@ -4,6 +4,29 @@
 
 ### September
 
+#### 7 - Family Reunion Activity Planner
+Write a function plan_activity that takes interest and returns the appropriate activity for a family member based on their interest.
+
+The function assigns specific activities for certain interests, with a default activity for everyone else.
+
+Conditions:
+If interest is "serology", return "Lab Tour"
+If interest is "shakespeare", return "Shakespeare Reading"
+For any other interest, return "Beach Party"
+Parameters:
+interest (str): The family member's area of interest
+Returns: The assigned activity name as a string. Format: "Lab Tour"
+
+```
+def plan_activity(interest):
+    if interest == "serology":
+        return "Lab Tour"
+    elif interest == "shakespeare":
+        return "Shakespeare Reading"
+    else:
+        return "Beach Party"
+```
+
 #### 6 - Strifeproof Multiplication
 You are given two numbers as input, num1 and num2.
 
