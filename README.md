@@ -4,6 +4,27 @@
 
 ### September
 
+#### 8 - Prepare a Welcome for the New Family Pet
+Create a function named prepare_pet_welcome that receives pet_name, pet_type, and initial_supplies as its parameters.
+
+The function should help a family prepare a welcome message and a list of pet supplies for their new pet.
+
+Your task is to create a personalized welcome message using the pet's name and type, and then add three essential items to the supplies list based on the pet's type.
+
+Parameters:
+
+pet_name (str): The name of the new pet.
+pet_type (str): The type of pet (e.g., "dog", "cat", "hamster").
+initial_supplies (list): A list of supplies the family already has.
+The function should perform the following operations:
+
+Create a welcome message using string concatenation in the format: "Welcome home, [pet_name] the [pet_type]!"
+Add three essential items to the supplies list based on the pet type (case-insensitive):
+For a dog: add "leash", "dog food", and "chew toy"
+For a cat: add "litter box", "cat food", and "scratching post"
+For any other pet type: add "cage", "food", and "toys"
+The function returns a dictionary with two keys: "welcome_message" (string) containing the personalized welcome message, and "supplies" (list) containing the updated supplies list., and "supplies" (list) containing the updated list of supplies.
+
 #### 7 - Family Reunion Activity Planner
 Write a function plan_activity that takes interest and returns the appropriate activity for a family member based on their interest.
 
