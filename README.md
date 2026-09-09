@@ -4,6 +4,20 @@
 
 ### September
 
+#### 9 - Plant Growth Report Generator
+Create a function named create_plant_report that receives plant_name and height as its parameters.
+
+As a botanist in a university laboratory, you need to create a simple plant growth report for your lab records. Your task is to combine the plant's name and its current height into a formatted string.
+
+Parameters:
+plant_name (str): The name of the plant being studied.
+height (int): The current height of the plant in centimeters.
+The function should return a string that combines the plant name and height into a formatted report message. The message should be in the following format: "The [plant_name] plant has grown to [height] cm tall."
+```
+def create_plant_report(plant_name, height):
+    return f"The {plant_name} plant has grown to {height} cm tall."
+```
+
 #### 8 - Prepare a Welcome for the New Family Pet
 Create a function named prepare_pet_welcome that receives pet_name, pet_type, and initial_supplies as its parameters.
 
