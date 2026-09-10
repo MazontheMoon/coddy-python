@@ -4,6 +4,28 @@
 
 ### September
 
+#### 10 - Mountain Trail Recommendation
+Write a function recommend_trail that takes hiker_name, experience_years and returns a personalized trail recommendation message.
+
+The function determines the appropriate trail based on hiking experience and creates a customized message for the hiker.
+
+Conditions:
+Less than 2 years experience: recommend "Beginner Trail"
+2 or more years experience: recommend "Advanced Trail"
+
+Parameters:
+hiker_name (str): The hiker's name
+experience_years (int): Years of hiking experience
+Returns: A personalized recommendation message. Format: Hello [name]! Based on your [years] years of experience, we recommend the [trail type] for your mountain adventure.
+```
+def recommend_trail(hiker_name, experience_years):
+    if experience_years < 2:
+        trail_type = "Beginner Trail"
+    else:
+        trail_type = "Advanced Trail"
+    
+    return f"Hello {hiker_name}! Based on your {experience_years} years of experience, we recommend the {trail_type} for your mountain adventure."
+```
 #### 9 - Plant Growth Report Generator
 Create a function named create_plant_report that receives plant_name and height as its parameters.
 
