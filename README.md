@@ -4,6 +4,21 @@
 
 ### September
 
+#### 11 - Family Reunion Name Tags
+Write a function create_name_tag that takes first_name, last_name and returns a formatted name tag string.
+
+The function creates a name tag for family reunion guests with proper formatting for easy identification.
+
+Parameters:
+first_name (str): The guest's first name
+last_name (str): The guest's last name
+Returns: A formatted name tag string. Format: Hello, my name is [LAST NAME], [first name]
+
+```
+def create_name_tag(first_name, last_name):
+    return f"Hello, my name is {last_name.upper()}, {first_name.lower()}"
+```
+
 #### 10 - Mountain Trail Recommendation
 Write a function recommend_trail that takes hiker_name, experience_years and returns a personalized trail recommendation message.
 
