@@ -4,6 +4,16 @@
 
 ### September
 
+#### 12 - Assign Moving Crew by Building Type
+Write a function assign_crew that takes building_description, unit_number and returns a formatted crew assignment message.
+
+The function checks if "adobe" appears anywhere in the building description and assigns the appropriate moving crew type ("Specialized" if "adobe" is present, otherwise "Standard").
+
+Parameters:
+building_description (str): Description of the building
+unit_number (int): The apartment unit number
+Returns: Crew assignment message. Format: Unit [unit_number]: [crew_type] crew assigned
+
 #### 11 - Family Reunion Name Tags
 Write a function create_name_tag that takes first_name, last_name and returns a formatted name tag string.
 
