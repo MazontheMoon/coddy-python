@@ -4,6 +4,15 @@
 
 ### September
 
+#### 13 - Aquarium Management System
+Create a program that manages three different calculations for the damselfish aquarium exhibit. Your program should read a calculation type (1, 2, or 3) and then perform the corresponding operation:
+
+Type 1 - Penalty Calculator: Read a violation count and calculate the penalty. Start with a base of 50, add 25 per violation, then add 10% of that subtotal for each violation beyond the first. Print the penalty rounded down.
+
+Type 2 - Arrangement Counter: Read three space-separated numbers: n (total specimens), r (specimens to arrange), and P (a prime number). Calculate how many ways to arrange r specimens from n total, then print the result modulo P. This is nPr mod P, where nPr = n!/(n-r)!.
+
+Type 3 - Twin Prime Finder: Read a number N and find all twin prime pairs up to N. Twin primes are pairs like (3,5) or (11,13) that differ by exactly 2. Print each pair on a separate line as "p1 p2".
+
 #### 12 - Assign Moving Crew by Building Type
 Write a function assign_crew that takes building_description, unit_number and returns a formatted crew assignment message.
 
