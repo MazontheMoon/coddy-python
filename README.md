@@ -1,8 +1,13 @@
-# Coddy - daily python challenges
+# Coddy - Daily Python Challenges
 
 ## 2026
 
 ### September
+
+#### 14 - Counting Notes and Buying Cornice
+Create a program that reads a renovation note and counts how many words are in it. Then, read your budget and the price per cornice piece, and calculate how many complete pieces you can afford to buy.
+
+Print the word count first, then the number of pieces you can purchase (remember: only whole pieces!).
 
 #### 13 - Aquarium Management System
 Create a program that manages three different calculations for the damselfish aquarium exhibit. Your program should read a calculation type (1, 2, or 3) and then perform the corresponding operation:
