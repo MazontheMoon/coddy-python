@@ -4,6 +4,12 @@
 
 ### September
 
+
+#### 15 - Opening Night Guest Count & Final Sales
+Create a program that reads a sentence from the guest list and counts how many words start with a vowel (a, e, i, o, u - case insensitive). Then read a list of ticket prices (one per line) (one per line until the end of input) (one per line) and calculate the sum of the last two prices.
+
+Print the vowel count on the first line and the sum of the last two prices on the second line.
+
 #### 14 - Counting Notes and Buying Cornice
 Create a program that reads a renovation note and counts how many words are in it. Then, read your budget and the price per cornice piece, and calculate how many complete pieces you can afford to buy.
 
