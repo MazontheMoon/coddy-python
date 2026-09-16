@@ -4,6 +4,18 @@
 
 ### September
 
+#### 16 - Romantic Picnic Cost Calculator
+Write a function calculate_picnic_cost that takes sandwich_price, drink_price, dessert_price, flower_price and returns a formatted romantic message with the total cost.
+
+The function calculates the total cost of all picnic items and creates a romantic summary message.
+
+Parameters:
+sandwich_price (float): Price of sandwiches
+drink_price (float): Price of drinks
+dessert_price (float): Price of desserts
+flower_price (float): Price of flowers
+Returns: A formatted string with basket contents and total cost. Format: "Our romantic picnic basket contains sandwiches, drinks, desserts, and flowers for $X.XX total"
+
 
 #### 15 - Opening Night Guest Count & Final Sales
 Create a program that reads a sentence from the guest list and counts how many words start with a vowel (a, e, i, o, u - case insensitive). Then read a list of ticket prices (one per line) (one per line until the end of input) (one per line) and calculate the sum of the last two prices.
