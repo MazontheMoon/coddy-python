@@ -4,6 +4,10 @@
 
 ### September
 
+#### 17 - Loyalty Program Validator
+
+Check if the username is valid (3-15 characters, letters/numbers/underscores only, can't start with a number), verify the balance is a valid decimal number, and calculate the estimated wait time (5 minutes per customer ahead in queue). Print "Valid" or "Invalid" for each check, followed by the wait time in minutes.
+
 #### 16 - Romantic Picnic Cost Calculator
 Write a function calculate_picnic_cost that takes sandwich_price, drink_price, dessert_price, flower_price and returns a formatted romantic message with the total cost.
 
