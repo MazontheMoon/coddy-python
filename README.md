@@ -4,6 +4,18 @@
 
 ### September
 
+#### 18 - Compare Two Groupings of an Expression
+Read integers a, b and c on separate lines. Print a + b * c on the first output line and (a + b) * c on the second. Each input is from 0 to 100.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+a = int(input())
+b = int(input())
+c = int(input())
+print(a + b * c)
+print((a + b) * c)
+```
+
 #### 17 - Loyalty Program Validator
 
 Check if the username is valid (3-15 characters, letters/numbers/underscores only, can't start with a number), verify the balance is a valid decimal number, and calculate the estimated wait time (5 minutes per customer ahead in queue). Print "Valid" or "Invalid" for each check, followed by the wait time in minutes.
