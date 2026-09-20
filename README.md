@@ -4,6 +4,35 @@
 
 ### September
 
+#### 20 - Describe the Order of Two Numbers
+Read two integers on separate lines. Print LESS, EQUAL or GREATER to describe the first number compared with the second. Both inputs are from -10000 to 10000.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+a = int(input())
+b = int(input())
+if a < b:
+    print("LESS")
+else:
+    if a == b:
+        print("EQUAL")
+    else:
+        print("GREATER")
+
+```
+
+#### 19 - Print a Two-Line Parcel Label
+Read an item name on the first line and an integer quantity on the second. Print Item: followed by the name, then Quantity: followed by the quantity on the next line. Each colon is followed by one space. The name contains 1-60 ASCII letters and internal spaces. Quantity is from 0 to 1000.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+name = input()
+quantity = int(input())
+print("Item:", name)
+print("Quantity:", quantity)
+
+```
+
 #### 18 - Compare Two Groupings of an Expression
 Read integers a, b and c on separate lines. Print a + b * c on the first output line and (a + b) * c on the second. Each input is from 0 to 100.
 
