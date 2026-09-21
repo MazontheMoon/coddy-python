@@ -4,26 +4,19 @@
 
 ### September
 
-#### 21 - Culinary Chaos: Ingredient Mayhem
-Create a function named kitchenChaos that receives String[] ingredients, int[] quantities, and String cookingTechniques as its parameters.
+#### 21 - Exchange Two Stored Numbers
+Read two integers on separate lines. Exchange their values and print the resulting first value followed by the resulting second value, separated by one space. Each input is from -1000 to 1000. For inputs 4 and 9, print 9 4.
 
-Your task is to simulate a culinary experiment gone awry in a cluttered kitchen, where flavors clash and ingredients become mismanageable. You need to process the ingredients, their quantities, and available cooking techniques to determine the outcome of this chaotic cooking adventure.
+End each output line with a newline. Print only the requested output, with no input prompts.
 
-Parameters:
-ingredients (String[]): An array of ingredient names. Some ingredients may be similar (e.g., "tomato" and "cherry tomato").
-quantities (int[]): An array of integers representing the quantity of each ingredient in grams. The index of each quantity corresponds to the index of the ingredient in the ingredients array.
-cookingTechniques (String): A binary string where each bit represents whether a specific cooking technique is available (1) or not (0). The techniques in order are: baking, frying, boiling, grilling, and steaming.
-
-The function should perform the following operations:
-Convert the binary cookingTechniques string to decimal to determine which cooking techniques are available.
-Sort the ingredients based on their quantities in descending order.
-Group similar ingredients together. Two ingredients are considered similar if one is a substring of the other (ignoring case).
-Calculate the total quantity of ingredients in each group.
-Determine the dominant flavor profile based on the ingredient group with the highest total quantity.
-Generate a description of the resulting dish based on the available cooking techniques and the dominant ingredients.
-The function returns a string describing the result of the chaotic cooking experiment, including the dominant flavor, the top 3 ingredient groups by quantity, and the cooking techniques used.
-
-Note: Ensure your implementation handles edge cases, such as empty arrays or invalid input formats. The solution should be efficient and utilize advanced array manipulation, string comparison, and number base conversion techniques.
+```
+a = int(input())
+b = int(input())
+saved = a
+a = b
+b = saved
+print(a, b)
+```
 
 #### 20 - Describe the Order of Two Numbers
 Read two integers on separate lines. Print LESS, EQUAL or GREATER to describe the first number compared with the second. Both inputs are from -10000 to 10000.
