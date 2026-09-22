@@ -4,6 +4,20 @@
 
 ### September
 
+#### 22 - Show a Balance After Each Update
+Read a starting balance, a deposit and a withdrawal on separate lines. Print the balance after adding the deposit. Then subtract the withdrawal from that updated balance and print the final balance on the next line. All three inputs are from 0 to 1000. A negative final balance is allowed.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+balance = int(input())
+deposit = int(input())
+withdrawal = int(input())
+balance += deposit
+print(balance)
+balance -= withdrawal
+print(balance)
+```
+
 #### 21 - Exchange Two Stored Numbers
 Read two integers on separate lines. Exchange their values and print the resulting first value followed by the resulting second value, separated by one space. Each input is from -1000 to 1000. For inputs 4 and 9, print 9 4.
 
