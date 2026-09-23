@@ -4,6 +4,18 @@
 
 ### September
 
+#### 23 - Deliver Two Lines in Reverse Order
+Read two lines of text. Print the second line first and the first line second, on separate output lines. Each input line contains 1-60 ASCII letters, digits or spaces and has no leading or trailing space. Preserve internal spaces and letter case.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+first = input()
+second = input()
+print(second)
+print(first)
+```
+
 #### 22 - Show a Balance After Each Update
 Read a starting balance, a deposit and a withdrawal on separate lines. Print the balance after adding the deposit. Then subtract the withdrawal from that updated balance and print the final balance on the next line. All three inputs are from 0 to 1000. A negative final balance is allowed.
 
