@@ -4,6 +4,24 @@
 
 ### September
 
+#### 24 - Pirate Captain's Hull Repair
+Create a function named repair_pirate_ship that receives wood_planks, nails, and damage_size as its parameters.
+
+The function should determine if the pirate captain has enough materials to repair the ship's hull.
+
+To repair the ship, the captain needs:
+
+At least 5 wood planks for every 1 unit of damage
+At least 2 nails for every 1 wood plank used
+Use basic logical operators and variable assignments to check if the captain has sufficient materials.
+
+Parameters:
+
+wood_planks (int): The number of wood planks available
+nails (int): The number of nails available
+damage_size (int): The size of the damage to the hull
+The function returns a boolean value: True if the captain has enough materials to repair the ship, False otherwise.
+
 #### 23 - Deliver Two Lines in Reverse Order
 Read two lines of text. Print the second line first and the first line second, on separate output lines. Each input line contains 1-60 ASCII letters, digits or spaces and has no leading or trailing space. Preserve internal spaces and letter case.
 
