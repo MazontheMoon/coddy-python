@@ -4,6 +4,20 @@
 
 ### September
 
+#### 25 - Detect a Value Outside a Window
+Read a value, a lower limit and an upper limit on separate lines. Print OUTSIDE if the value is below the lower limit or above the upper limit. Otherwise print INSIDE. The endpoints are inside. All inputs are from -1000 to 1000, and the lower limit does not exceed the upper limit.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+value = int(input())
+lower = int(input())
+upper = int(input())
+if value < lower or value > upper:
+    print("OUTSIDE")
+else:
+    print("INSIDE")
+```
+
 #### 24 - Pirate Captain's Hull Repair
 Create a function named repair_pirate_ship that receives wood_planks, nails, and damage_size as its parameters.
 
