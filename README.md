@@ -4,6 +4,19 @@
 
 ### September
 
+#### 26 - Repeat an Input Message on Separate Line
+Read a count on the first line and a message on the second. Print the message on exactly that many output lines. The count is from 1 to 20. The message contains 1-60 ASCII letters, digits or spaces, without leading or trailing space. Preserve the message exactly.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+count = int(input())
+message = input()
+i = 0
+while i < count:
+    print(message)
+    i += 1
+```
+
 #### 25 - Detect a Value Outside a Window
 Read a value, a lower limit and an upper limit on separate lines. Print OUTSIDE if the value is below the lower limit or above the upper limit. Otherwise print INSIDE. The endpoints are inside. All inputs are from -1000 to 1000, and the lower limit does not exceed the upper limit.
 
