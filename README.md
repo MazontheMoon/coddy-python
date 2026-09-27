@@ -4,6 +4,19 @@
 
 ### September
 
+#### 27 - Check Three Readings in Order
+
+```
+a = int(input())
+b = int(input())
+c = int(input())
+if a <= b and b <= c:
+    print("ORDERED")
+else:
+    print("UNORDERED")
+
+```
+
 #### 26 - Repeat an Input Message on Separate Line
 Read a count on the first line and a message on the second. Print the message on exactly that many output lines. The count is from 1 to 20. The message contains 1-60 ASCII letters, digits or spaces, without leading or trailing space. Preserve the message exactly.
 
