@@ -4,6 +4,29 @@
 
 ### September
 
+#### 28 - Family Reunion RSVP Checker
+Write a function check_reunion_attendance that takes name, is_available, rsvp_confirmed and returns a personalized message string.
+
+The function checks if a family member can attend the reunion on the 28th and creates an appropriate message based on their availability and RSVP status.
+
+Conditions:
+If both available AND RSVP confirmed: return confirmation message
+If not available OR RSVP not confirmed: return regret message
+
+Parameters:
+name (str): Family member's name
+is_available (bool): Whether they're available on the 28th
+rsvp_confirmed (bool): Whether they confirmed their RSVP
+Returns: Personalized message string. Format: "Hi [name], we're excited to see you at the family reunion on the 28th!" or "Hi [name], we're sorry you can't make it to the family reunion on the 28th."
+
+```
+def check_reunion_attendance(name, is_available, rsvp_confirmed):
+    if is_available and rsvp_confirmed:
+        return f"Hi {name}, we're excited to see you at the family reunion on the 28th!"
+    else:
+        return f"Hi {name}, we're sorry you can't make it to the family reunion on the 28th."
+```
+
 #### 27 - Check Three Readings in Order
 
 ```
