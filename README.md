@@ -4,6 +4,28 @@
 
 ### September
 
+#### 29 - Library Access Control System
+Write a function process_library_access that takes member_level, current_checkouts, book_available and returns a boolean indicating checkout approval.
+
+The function processes library member access by incrementing checkout counters based on membership type and validating multiple conditions for book checkout eligibility.
+
+Logic:
+Increment current_checkouts by 1 if member_level is "premium" or by 2 if "standard"
+Check if updated checkout count doesn't exceed limits: premium (10 books), standard (5 books), basic (3 books)
+Approve checkout only if book is available AND checkout limit not exceeded
+
+Conditions:
+Premium members: increment by 1, limit 10 books
+Standard members: increment by 2, limit 5 books
+Basic members: no increment, limit 3 books
+Book must be available for any approval
+
+Parameters:
+member_level (str): Member type ("premium", "standard", or "basic")
+current_checkouts (int): Current number of books checked out
+book_available (bool): Whether the requested book is available
+Returns: Boolean indicating if checkout is approved. Format: True or False
+
 #### 28 - Family Reunion RSVP Checker
 Write a function check_reunion_attendance that takes name, is_available, rsvp_confirmed and returns a personalized message string.
 
