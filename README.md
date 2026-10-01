@@ -2,7 +2,50 @@
 
 ## 2026
 
+### October
+
+#### 1 - Sleep In on the Weekend
+Days are numbered from 1 (Monday) to 7 (Sunday). You sleep in when the day is 6 or 7 and no alarm is set.
+
+Read the day number and whether an alarm is set (true or false). Print whether it is the weekend, then whether you sleep in. For 6 and true:
+
+Weekend: True
+Sleep in: False
+Print only these lines, with no input prompts.
+
+```
+day = int(input())
+alarm = input() == "true"
+
+weekend = day >= 6
+sleep_in = weekend and not alarm
+print(f"Weekend: {weekend}")
+print(f"Sleep in: {sleep_in}")
+
+```
+
 ### September
+
+#### 30 - Vaccine Eligibility Checker
+Create a function named vaccine_eligibility that receives age, has_allergies, and previous_reactions as its parameters.
+
+The function should determine whether a patient is eligible for a vaccine based on their age and medical history. This challenge simulates a scenario where a nurse at a local clinic needs to assess patient eligibility for vaccination.
+
+Use conditional statements and logical operators to implement the following eligibility criteria:
+Patients under 12 years old are not eligible for the vaccine.
+Patients 12 years and older are eligible, but with different recommendations based on their medical history:
+If they have allergies or previous adverse reactions to vaccines, they should consult with a doctor first.
+If they have no allergies and no previous reactions, they can proceed with the vaccine.
+
+Parameters:
+age (int): The patient's age in years.
+has_allergies (bool): Whether the patient has any known allergies (True if they have allergies, False otherwise).
+previous_reactions (bool): Whether the patient has had previous adverse reactions to vaccines (True if they have had reactions, False otherwise).
+The function should return a string indicating whether the patient is eligible for the vaccine and any precautions or recommendations.
+
+Ensure your implementation uses if-else statements and logical operators efficiently to determine the appropriate output based on the input conditions.
+
+
 
 #### 29 - Library Access Control System
 Write a function process_library_access that takes member_level, current_checkouts, book_available and returns a boolean indicating checkout approval.
