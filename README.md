@@ -4,6 +4,25 @@
 
 ### October
 
+#### 2 - Can the Roller Coaster Start
+A rider may board when they are at least 120 cm tall and at least 8 years old, or when they are at least 110 cm tall and riding with an adult.
+
+Read the height, the age, and whether an adult rides along (true or false), each on its own line. Print Can ride: followed by True or False.
+
+For 115, 7 and true:
+
+Can ride: True
+Print only these lines, with no input prompts.
+
+```
+height = int(input())
+age = int(input())
+with_adult = input() == "true"
+
+can_ride = (height >= 120 and age >= 8) or (height >= 110 and with_adult)
+print(f"Can ride: {can_ride}")
+```
+
 #### 1 - Sleep In on the Weekend
 Days are numbered from 1 (Monday) to 7 (Sunday). You sleep in when the day is 6 or 7 and no alarm is set.
 
