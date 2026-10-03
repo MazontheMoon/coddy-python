@@ -4,6 +4,26 @@
 
 ### October
 
+#### 3 - Fill In a Conference Badge
+Read a first name, a last name and a role, each on its own line. Store the full badge text in a variable named badge in the form ROLE: FIRST LAST, and set a variable printed to True.
+
+Then print both variables. For the input Ada, Lovelace and Speaker:
+badge = Speaker: Ada Lovelace
+printed = True
+Print only these lines, with no input prompts.
+```
+first = input()
+last = input()
+role = input()
+
+badge = f"{role}: {first} {last}"
+printed = True
+
+print(f"badge = {badge}")
+print(f"printed = {printed}")
+
+```
+
 #### 2 - Can the Roller Coaster Start
 A rider may board when they are at least 120 cm tall and at least 8 years old, or when they are at least 110 cm tall and riding with an adult.
 
