@@ -4,6 +4,23 @@
 
 ### October
 
+#### 4 - Decide on Free Shipping
+A shop ships for free when the order total is at least 50, or when the customer is a member and the order is not a bulky item.
+
+Read the order total (a whole number), whether the customer is a member and whether the item is bulky (true or false), each on its own line. 
+Print Free shipping: followed by True or False.
+For 30, true and false:
+Free shipping: True
+Print only these lines, with no input prompts.
+
+```
+total = int(input())
+is_member = input() == "true"
+is_bulky = input() == "true"
+
+free = total >= 50 or (is_member and not is_bulky)
+print(f"Free shipping: {free}")
+```
 #### 3 - Fill In a Conference Badge
 Read a first name, a last name and a role, each on its own line. Store the full badge text in a variable named badge in the form ROLE: FIRST LAST, and set a variable printed to True.
 
