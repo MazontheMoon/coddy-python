@@ -4,6 +4,30 @@
 
 ### October
 
+#### 5 - Check a Parcel Against the Weight Limit
+A courier accepts parcels up to a weight limit. Read the parcel weight on the first line and the limit on the second, both whole kilograms.
+
+Print three lines: whether the parcel is over the limit, whether it is exactly at the limit, and how many kilograms are left before the limit (negative when it is over).
+
+For a weight of 12 and a limit of 20:
+Over limit: False
+Exactly at limit: False
+Kilograms left: 8
+Print only these lines, with no input prompts.
+
+```
+weight = int(input())
+limit = int(input())
+
+over = weight > limit
+exact = weight == limit
+left = limit - weight
+
+print(f"Over limit: {over}")
+print(f"Exactly at limit: {exact}")
+print(f"Kilograms left: {left}")
+```
+
 #### 4 - Decide on Free Shipping
 A shop ships for free when the order total is at least 50, or when the customer is a member and the order is not a bulky item.
 
