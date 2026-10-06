@@ -4,6 +4,28 @@
 
 ### October
 
+#### 6 - Print a Wedding Table Card
+Each wedding guest gets a card at their seat. Read the table number on the first line and the guest's name on the second line.
+
+The card shows the name before the table number. Print four lines: Welcome to our wedding, the guest's name, Your table is, and the table number.
+
+For the input 7 and Ada Lovelace:
+
+Welcome to our wedding
+Ada Lovelace
+Your table is
+7
+
+
+```
+table = input()
+guest = input()
+
+print("Welcome to our wedding")
+print(guest)
+print("Your table is")
+print(table)
+```
 #### 5 - Check a Parcel Against the Weight Limit
 A courier accepts parcels up to a weight limit. Read the parcel weight on the first line and the limit on the second, both whole kilograms.
 
