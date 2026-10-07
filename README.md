@@ -4,6 +4,35 @@
 
 ### October
 
+#### 7 - Announce a Song on the Radio
+
+A radio host reads the song details from a card. Read the song title, the artist and the title of the next song, each on its own line.
+
+Print six lines: Now playing:, the song title, by, the artist, Coming up next: and the next song's title.
+
+For Yellow Submarine, The Beatles and Here Comes the Sun:
+
+Now playing:
+Yellow Submarine
+by
+The Beatles
+Coming up next:
+Here Comes the Sun
+
+```
+song = input()
+artist = input()
+next_song = input()
+
+print("Now playing:")
+print(song)
+print("by")
+print(artist)
+print("Coming up next:")
+print(next_song)
+
+```
+
 #### 6 - Print a Wedding Table Card
 Each wedding guest gets a card at their seat. Read the table number on the first line and the guest's name on the second line.
 
