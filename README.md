@@ -4,6 +4,26 @@
 
 ### October
 
+#### 8 - Choose a Thermostat Mode
+Read the room temperature on the first line and the target temperature on the second, both whole degrees.
+
+Print Mode: Heat when the room is more than 1 degree below the target, Mode: Cool when it is more than 1 degree above it, and Mode: Hold otherwise.
+
+For 18 and 21:
+
+Mode: Heat
+
+```room = int(input())
+target = int(input())
+
+if room < target - 1:
+    print("Mode: Heat")
+elif room > target + 1:
+    print("Mode: Cool")
+else:
+    print("Mode: Hold")
+```
+
 #### 7 - Announce a Song on the Radio
 
 A radio host reads the song details from a card. Read the song title, the artist and the title of the next song, each on its own line.
