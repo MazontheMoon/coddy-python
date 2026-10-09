@@ -4,6 +4,38 @@
 
 ### October
 
+#### 9 - Light Up a Theater Marquee
+A theater puts tonight's show on the sign above its door. Read the play, the lead actor, the second actor and the curtain time, each on its own line.
+
+Print eight lines: TONIGHT ONLY, the play, starring, the lead actor, and, the second actor, Curtain at and the time.
+
+For Hamlet, Ada Stone, Leo Park and 19:30:
+TONIGHT ONLY
+Hamlet
+starring
+Ada Stone
+and
+Leo Park
+Curtain at
+19:30
+
+```
+play = input()
+lead = input()
+second = input()
+time = input()
+
+print("TONIGHT ONLY")
+print(play)
+print("starring")
+print(lead)
+print("and")
+print(second)
+print("Curtain at")
+print(time)
+
+```
+
 #### 8 - Choose a Thermostat Mode
 Read the room temperature on the first line and the target temperature on the second, both whole degrees.
 
