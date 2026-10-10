@@ -4,6 +4,13 @@
 
 ### October
 
+#### 10 - Print
+Read one line of text. Print it between [ and ], with exactly one added space after the opening bracket and before the closing bracket. Preserve every character of the input. The line has 1-60 ASCII letters, digits or spaces, with no leading or trailing space. For input Green tea, print [ Green tea ].
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```s = input()
+print("[", s, "]")
+```
 #### 9 - Light Up a Theater Marquee
 A theater puts tonight's show on the sign above its door. Read the play, the lead actor, the second actor and the curtain time, each on its own line.
 
