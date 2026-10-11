@@ -4,6 +4,16 @@
 
 ### October
 
+#### 11 - Add Numbers From Three Input Lines
+Read three integers, each on its own line, and print their sum on one line. Each integer is between -1000 and 1000. Read the input as numbers before adding.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```a = int(input())
+b = int(input())
+c = int(input())
+print(a + b + c)
+```
+
 #### 10 - Print
 Read one line of text. Print it between [ and ], with exactly one added space after the opening bracket and before the closing bracket. Preserve every character of the input. The line has 1-60 ASCII letters, digits or spaces, with no leading or trailing space. For input Green tea, print [ Green tea ].
 
