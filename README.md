@@ -4,6 +4,14 @@
 
 ### October
 
+#### 12 - Count Characters on an Input Line
+Read one line and print its character count as an integer. Count internal spaces too; do not count the line ending. The input has 1-60 ASCII letters, digits or spaces and no leading or trailing space. For A B, print 3.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```s = input()
+print(len(s))
+```
+
 #### 11 - Add Numbers From Three Input Lines
 Read three integers, each on its own line, and print their sum on one line. Each integer is between -1000 and 1000. Read the input as numbers before adding.
 
