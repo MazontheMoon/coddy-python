@@ -4,6 +4,15 @@
 
 ### October
 
+#### 13 - Print the Places of a Three-Digit Number
+Read an integer from 100 to 999. Print its hundreds, tens and units digits on one line separated by single spaces, in that order. Include zero digits. For 407, print 4 0 7.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+n = int(input())
+print(n // 100, (n // 10) % 10, n % 10)
+```
+
 #### 12 - Count Characters on an Input Line
 Read one line and print its character count as an integer. Count internal spaces too; do not count the line ending. The input has 1-60 ASCII letters, digits or spaces and no leading or trailing space. For A B, print 3.
 
