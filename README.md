@@ -4,6 +4,19 @@
 
 ### October
 
+#### 14 - Even or Odd for Signed Input
+Read an integer from -10000 to 10000. Print EVEN if it is divisible by two, including zero. Otherwise print ODD. Negative odd numbers must also print ODD.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+n = int(input())
+if n % 2 == 0:
+    print("EVEN")
+else:
+    print("ODD")
+```
+
 #### 13 - Print the Places of a Three-Digit Number
 Read an integer from 100 to 999. Print its hundreds, tens and units digits on one line separated by single spaces, in that order. Include zero digits. For 407, print 4 0 7.
 
