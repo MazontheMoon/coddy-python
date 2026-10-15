@@ -4,6 +4,28 @@
 
 ### October
 
+#### 15 - Reschedule a Dentist Appointment
+A dentist's office moves an appointment and keeps a note of the old time. Read the current appointment on the first line and the new one on the second line.
+
+Save the current appointment in a new variable named old_day, then change day to the new appointment. The starter code already prints both variables, in the form Appointment: DAY and Moved from: OLD_DAY.
+
+For Tuesday 10:00 and Friday 15:30:
+
+Appointment: Friday 15:30
+Moved from: Tuesday 10:00
+
+```
+day = input()
+new_day = input()
+
+old_day = day
+day = new_day
+
+print(f"Appointment: {day}")
+print(f"Moved from: {old_day}")
+
+```
+
 #### 14 - Even or Odd for Signed Input
 Read an integer from -10000 to 10000. Print EVEN if it is divisible by two, including zero. Otherwise print ODD. Negative odd numbers must also print ODD.
 
