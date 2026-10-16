@@ -4,6 +4,19 @@
 
 ### October
 
+#### 16 - Apply a Discount in Whole Coins
+Read a price and a discount percentage on separate lines. First compute the discount in whole coins by rounding price * percentage / 100 down. Subtract that whole-coin discount from the original price and print the result. Price is from 0 to 10000, and percentage is from 0 to 100. For price 19 and percentage 10, the discount is 1 coin and the result is 18.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+price = int(input())
+percentage = int(input())
+discount = (price * percentage) // 100
+print(price - discount)
+
+```
+
 #### 15 - Reschedule a Dentist Appointment
 A dentist's office moves an appointment and keeps a note of the old time. Read the current appointment on the first line and the new one on the second line.
 
