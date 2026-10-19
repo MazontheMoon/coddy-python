@@ -4,6 +4,75 @@
 
 ### October
 
+#### 19 - Work Out a Parking Fee
+A car park charges by the number of whole hours parked: up to 1 hour is free, up to 3 hours costs 4, up to 8 hours costs 9, and anything longer costs 15. Members pay half of any fee, rounded down.
+
+Read the hours parked and whether the driver is a member (true or false). Print Fee: followed by the amount. For 5 and true:
+
+Fee: 4
+
+```
+hours = int(input())
+is_member = input() == "true"
+
+if hours <= 1:
+    fee = 0
+elif hours <= 3:
+    fee = 4
+elif hours <= 8:
+    fee = 9
+else:
+    fee = 15
+if is_member:
+    fee = fee // 2
+print(f"Fee: {fee}")
+
+```
+
+#### 18 - Swap Two Seat Numbers
+Two friends booked seats, and they want to trade. Read the first friend's seat on the first line and the second friend's seat on the second line.
+
+Swap the values so that first_seat holds the second friend's old seat and second_seat holds the first friend's old seat. Use a third variable to keep one value while you move the other. Then print:
+
+first_seat = 14C
+second_seat = 2A
+That example is for the input 2A and 14C.
+
+```
+first_seat = input()
+second_seat = input()
+
+temp = first_seat
+first_seat = second_seat
+second_seat = temp
+
+print(f"first_seat = {first_seat}")
+print(f"second_seat = {second_seat}")
+
+```
+
+#### 17 - Print a Welcome Home Banner
+A family hangs a banner on the door for someone coming home from a long trip. Read that person's name on one line.
+
+Print a banner of four lines: a row of ten equals signs ==========, then WELCOME HOME, then the name, then the same row of equals signs again.
+
+For Mia:
+
+==========
+WELCOME HOME
+Mia
+==========
+
+```
+name = input()
+
+print("==========")
+print("WELCOME HOME")
+print(name)
+print("==========")
+
+```
+
 #### 16 - Apply a Discount in Whole Coins
 Read a price and a discount percentage on separate lines. First compute the discount in whole coins by rounding price * percentage / 100 down. Subtract that whole-coin discount from the original price and print the result. Price is from 0 to 10000, and percentage is from 0 to 100. For price 19 and percentage 10, the discount is 1 coin and the result is 18.
 
