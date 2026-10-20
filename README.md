@@ -4,6 +4,20 @@
 
 ### October
 
+#### 20 - Break Seconds Into Three Clock Units
+Read a nonnegative duration in seconds, from 0 to 86399. Print three integers on one line, separated by single spaces: complete hours, remaining complete minutes, remaining seconds. Do not pad the numbers with zeroes. For 3661, print 1 1 1.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+seconds = int(input())
+hours = seconds // 3600
+minutes = (seconds % 3600) // 60
+remaining = seconds % 60
+print(hours, minutes, remaining)
+
+```
+
 #### 19 - Work Out a Parking Fee
 A car park charges by the number of whole hours parked: up to 1 hour is free, up to 3 hours costs 4, up to 8 hours costs 9, and anything longer costs 15. Members pay half of any fee, rounded down.
 
