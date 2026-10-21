@@ -4,6 +4,20 @@
 
 ### October
 
+#### 21 - Exactly One of Three Switches Is On
+Read three switch states on separate lines. Each is 0 for off or 1 for on. Print ONE if exactly one switch is on; otherwise print OTHER.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+a = int(input())
+b = int(input())
+c = int(input())
+if a + b + c == 1:
+    print("ONE")
+else:
+    print("OTHER")
+```
+
 #### 20 - Break Seconds Into Three Clock Units
 Read a nonnegative duration in seconds, from 0 to 86399. Print three integers on one line, separated by single spaces: complete hours, remaining complete minutes, remaining seconds. Do not pad the numbers with zeroes. For 3661, print 1 1 1.
 
