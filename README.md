@@ -4,6 +4,39 @@
 
 ### October
 
+#### 22 - Garden Plot Assignment
+Create a program that reads a garden plot name and number, then formats the name properly and determines if the plot gets extra sun exposure.
+
+First, capitalize the first letter of each word in the plot name. Then check if the plot number is a "sunny number" - a number where adding 1 gives a perfect square (like 8, because 8+1=9=3²). Print the formatted name, then "Sunny plot" if it's sunny, or "Shaded plot" otherwise.
+
+```
+# Read the plot name and number
+plot_name = input()
+plot_number = int(input())
+
+# Capitalize the first letter of each word
+formatted_name = plot_name.title()
+
+# Check if the plot number is a "sunny number"
+# A sunny number is one where adding 1 gives a perfect square
+next_number = plot_number + 1
+
+# Check if next_number is a perfect square
+# We can do this by taking the square root and checking if it's an integer
+import math
+sqrt_value = math.sqrt(next_number)
+is_sunny = sqrt_value == int(sqrt_value)
+
+# Print the formatted name
+print(formatted_name)
+
+# Print whether it's sunny or shaded
+if is_sunny:
+    print("Sunny plot")
+else:
+    print("Shaded plot")
+```
+
 #### 21 - Exactly One of Three Switches Is On
 Read three switch states on separate lines. Each is 0 for off or 1 for on. Print ONE if exactly one switch is on; otherwise print OTHER.
 
