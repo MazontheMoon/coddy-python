@@ -4,6 +4,18 @@
 
 ### October
 
+#### 23 - Round a Whole Number to the Nearest Ten
+
+
+Read an integer from 0 to 10000. Print the nearest multiple of ten. If it is exactly halfway between two multiples, choose the larger one. For 25, print 30.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+n = int(input())
+print(((n + 5) // 10) * 10)
+```
+
 #### 22 - Garden Plot Assignment
 Create a program that reads a garden plot name and number, then formats the name properly and determines if the plot gets extra sun exposure.
 
