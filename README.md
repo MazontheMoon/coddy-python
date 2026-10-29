@@ -4,8 +4,97 @@
 
 ### October
 
-#### 23 - Round a Whole Number to the Nearest Ten
+#### 29 - Planning the Herb Garden Plot
+Write a function plan_herb_garden that takes plot_size (float), volunteers (int), and include_rare (bool) and returns a formatted string about the garden allocation.
 
+The function calculates how much space each volunteer gets by dividing the total plot size by the number of volunteers, then formats this information along with whether rare herbs (like knotted marjoram) will be included.
+
+Parameters:
+
+plot_size (float): Total garden area in square meters
+volunteers (int): Number of people helping with the garden
+include_rare (bool): Whether to plant rare herbs
+Returns: A formatted string showing space per volunteer and rare herb status. Format: Each volunteer gets X square meters. Rare herbs: Yes/No
+
+#### 28 - Gorgonin Counter
+Complete the code to print 'Gorgonin' when the count is greater than 3.
+```
+count = 0
+while count < 5:
+    count += 1
+    if count > 3:
+        print('Gorgonin')
+```
+
+#### 27 - Seats for Every Passenger
+Read a passenger count and a seats-per-vehicle count on separate lines. Print the smallest number of vehicles that can seat everyone. A partly filled vehicle still counts. With zero passengers, print 0. Passengers is from 0 to 10000; seats is from 1 to 100.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+passengers = int(input())
+seats = int(input())
+print((passengers + seats - 1) // seats)
+
+```
+
+#### 26 - Apprentice's Weekly Assessment
+Create a program that helps you manage your apothecary apprentice duties. You'll receive three ingredient measurements (in drams) and a performance score, each as a whole number on its own line.
+
+First, check if the three measurements form a geometric progression, where each value equals the previous one multiplied by the same ratio. A sequence whose first measurement is 0 is not geometric. Print Geometric or Not geometric.
+
+Then calculate your weekly bonus: start with 10.0 silver coins, multiply by 1.5 if your performance is from 80 to 89, or multiply by 2.0 if it is from 90 to 100. Any other score keeps the bonus at 10.0. Print the bonus with one decimal place, for example 15.0.
+
+```
+# Read the three ingredient measurements and performance score
+a = int(input())
+b = int(input())
+c = int(input())
+performance = int(input())
+
+# Check if the measurements form a geometric progression
+# In a geometric progression: b/a = c/b (the ratio is constant)
+# To avoid division issues, we can check: b * b = a * c
+if a != 0 and b * b == a * c:
+    print("Geometric")
+else:
+    print("Not geometric")
+
+# Calculate weekly bonus
+bonus = 10.0
+if 80 <= performance <= 89:
+    bonus *= 1.5
+elif 90 <= performance <= 100:
+    bonus *= 2.0
+
+print(f"{bonus:.1f}")
+
+```
+
+#### 25 - Turn a Row and Seat Into a Ticket Number
+Read the number of seats per row, a row number and a seat number on separate lines. Ticket numbers start at 1, increase across each row, then continue on the next row. Print the ticket number using (row - 1) * seatsPerRow + seat. Seats per row and row number are from 1 to 100; the seat number is from 1 through the seats-per-row count. For inputs 4, 2 and 3, print 7.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+width = int(input())
+row = int(input())
+seat = int(input())
+print((row - 1) * width + seat)
+
+```
+
+#### 24 - Round a Whole Number to the Nearest Ten
+
+Read an integer from 0 to 10000. Print the nearest multiple of ten. If it is exactly halfway between two multiples, choose the larger one. For 25, print 30.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+n = int(input())
+print(((n + 5) // 10) * 10)
+
+```
+
+#### 23 - Round a Whole Number to the Nearest Ten
 
 Read an integer from 0 to 10000. Print the nearest multiple of ten. If it is exactly halfway between two multiples, choose the larger one. For 25, print 30.
 
