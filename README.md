@@ -4,6 +4,27 @@
 
 ### October
 
+#### 30 - Rare Book Catalog Entry
+Write a function create_catalog_entry that takes title, year, value and returns a formatted catalog entry string.
+
+The function creates a standardized library catalog entry by combining the book information with calculated handling fee.
+
+Parameters:
+
+title (str): The book's title
+year (int): Publication year
+value (int): Estimated value in dollars
+The handling fee is 5% of the value, rounded down to whole dollars. For example, a value of 25 gives a fee of 1 and a value of 10 gives 0.
+
+Returns: Formatted catalog entry string. Format: Title: [title] | Year: [year] | Value: $[value] | Fee: $[fee]
+
+```
+def create_catalog_entry(title, year, value):
+    fee = value * 5 // 100
+    return f"Title: {title} | Year: {year} | Value: ${value} | Fee: ${fee}"
+
+```
+
 #### 29 - Planning the Herb Garden Plot
 Write a function plan_herb_garden that takes plot_size (float), volunteers (int), and include_rare (bool) and returns a formatted string about the garden allocation.
 
