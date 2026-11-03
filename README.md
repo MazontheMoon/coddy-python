@@ -2,7 +2,110 @@
 
 ## 2026
 
+### November
+
+#### 3 - Market Price Calculator
+Create a function named marketPriceCalculator that receives product_code, price_per_unit, and quantity as its parameters.
+
+This function calculates the total price of a product based on its unique code and pricing strategies:
+
+If 'X7' is in product_code, apply a 7% discount to price_per_unit.
+If 'A1B' is in product_code, increase price_per_unit by 5%.
+For each 'C' in product_code, reduce price_per_unit by 2% cumulatively.
+After applying these adjustments, calculate the total_price by multiplying the adjusted price_per_unit by the quantity.
+
+Parameters:
+
+product_code (str): Unique identifier for each product.
+price_per_unit (float): Base price per unit of the product.
+quantity (int): Number of units purchased.
+The function returns the total price as a float rounded to 2 decimal places with round(total_price, 2), for example 705.89 or 93.0.
+
+```
+def marketPriceCalculator(product_code, price_per_unit, quantity):
+    if 'X7' in product_code:
+        price_per_unit *= 0.93
+    if 'A1B' in product_code:
+        price_per_unit *= 1.05
+    c_count = product_code.count('C')
+    if c_count > 0:
+        price_per_unit *= (1 - 0.02) ** c_count
+    total_price = price_per_unit * quantity
+    return round(total_price, 2)
+
+```
+
+#### 2 - Calculate Average Lava Temperature
+Create a function named calculate_lava_temp_avg that receives temp1, temp2, and temp3 as its parameters.
+
+As a scientist conducting experiments in a geological research station near an active volcano, you need to calculate the average temperature of lava samples. Your function should compute the average of three temperature readings from lava samples.
+
+Parameters:
+
+temp1 (float): The first temperature reading in Celsius.
+temp2 (float): The second temperature reading in Celsius.
+temp3 (float): The third temperature reading in Celsius.
+The function returns a float representing the average temperature of the three readings.
+
+Remember to use basic arithmetic operations (addition and division) to calculate the average. The result should be a float value.
+
+
+```
+def calculate_lava_temp_avg(temp1, temp2, temp3):
+    return (temp1 + temp2 + temp3) / 3
+```
+
+#### 1 - Diner Order Processing
+Write a function process_order that takes stock_count, price, payment and returns the order status and change amount.
+
+The function checks if there's enough stock and sufficient payment, then calculates the change or shortage.
+
+Conditions:
+
+Check stock first: if stock_count <= 0, return Rejected, out of stock (no amount).
+Otherwise, if payment < price, the order is rejected: calculate the shortage (price - payment).
+Otherwise the order is accepted: calculate the change (payment - price).
+Parameters:
+
+stock_count (int): Number of items available
+price (float): Cost of the menu item
+payment (float): Amount customer paid
+Returns: Order status and amount. Format: "Accepted, change: $2.50" or "Rejected, shortage: $1.25" or "Rejected, out of stock". Always show the amount with exactly two decimal places, for example $0.00 or $50.00.
+```
+def process_order(stock_count, price, payment):
+    if stock_count <= 0:
+        return "Rejected, out of stock"
+    elif payment < price:
+        shortage = price - payment
+        return f"Rejected, shortage: ${shortage:.2f}"
+    else:
+        change = payment - price
+        return f"Accepted, change: ${change:.2f}"
+```
+
 ### October
+
+#### 31 - Total Scores Until a Zero
+Scores arrive one per line. A 0 marks the end and is not a score. Read the lines until the 0, then print how many scores there were and their total.
+
+For the lines 5, 12, 3 and 0:
+
+Count: 3
+Total: 20
+Every score is a whole number from 1 to 100, and there are at most 50 of them.
+
+```
+count = 0
+total = 0
+score = int(input())
+while score != 0:
+    count += 1
+    total += score
+    score = int(input())
+print(f"Count: {count}")
+print(f"Total: {total}")
+
+```
 
 #### 30 - Rare Book Catalog Entry
 Write a function create_catalog_entry that takes title, year, value and returns a formatted catalog entry string.
