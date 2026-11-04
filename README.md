@@ -4,6 +4,23 @@
 
 ### November
 
+#### 4 - Community Garden Budget Calculator
+Write a function calculate_garden_budget that takes soil_cost, seeds_cost, and tools_cost and returns the total cost needed for setting up a community garden plot.
+
+Arthur, the mustachioed volunteer coordinator, needs to calculate the total budget required for each new garden plot including soil preparation, fiddleneck seeds, and basic gardening tools.
+
+Parameters:
+
+soil_cost (float): Cost of soil preparation
+seeds_cost (float): Cost of seeds and plants
+tools_cost (float): Cost of basic gardening tools
+Returns: the total cost as a float rounded to 2 decimal places with round(total, 2). For example, 12.99, 8.49 and 19.99 return 41.47, and 45.5, 25.75 and 54.25 return 125.5.
+```
+def calculate_garden_budget(soil_cost, seeds_cost, tools_cost):
+    return round(soil_cost + seeds_cost + tools_cost, 2)
+
+```
+
 #### 3 - Market Price Calculator
 Create a function named marketPriceCalculator that receives product_code, price_per_unit, and quantity as its parameters.
 
