@@ -4,6 +4,31 @@
 
 ### November
 
+#### 5 - Weeks to Reach a Savings Goal
+A savings account starts at 0, and every week you add the same deposit. Read the goal on the first line and the weekly deposit on the second. Both are whole numbers: the goal is from 1 to 200 and the deposit from 1 to 50.
+
+After each week, print the balance as Week N: B, where N counts weeks from 1. Stop after the first week in which the balance reaches or passes the goal, then print Weeks: N with the number of weeks it took.
+
+For a goal of 10 and a deposit of 4, print:
+
+Week 1: 4
+Week 2: 8
+Week 3: 12
+Weeks: 3
+
+```
+goal = int(input())
+deposit = int(input())
+balance = 0
+week = 0
+while balance < goal:
+    week += 1
+    balance += deposit
+    print(f"Week {week}: {balance}")
+print(f"Weeks: {week}")
+
+```
+
 #### 4 - Community Garden Budget Calculator
 Write a function calculate_garden_budget that takes soil_cost, seeds_cost, and tools_cost and returns the total cost needed for setting up a community garden plot.
 
