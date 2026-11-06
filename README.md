@@ -4,6 +4,22 @@
 
 ### November
 
+#### 6 - Add Up the Even Numbers
+Read a whole number n from 0 to 1000. Add up every even number from 2 to n (including n when it is even) and print Sum: followed by the total.
+
+For 7, the even numbers are 2, 4 and 6:
+
+Sum: 12
+```
+n = int(input())
+
+total = 0
+for i in range(2, n + 1, 2):
+    total += i
+print(f"Sum: {total}")
+
+```
+
 #### 5 - Weeks to Reach a Savings Goal
 A savings account starts at 0, and every week you add the same deposit. Read the goal on the first line and the weekly deposit on the second. Both are whole numbers: the goal is from 1 to 200 and the deposit from 1 to 50.
 
