@@ -4,6 +4,49 @@
 
 ### November
 
+#### 9 - Print a Numbered Multiplication Table
+Read a number and a row count on separate lines. For each multiplier from 1 through the row count, print number x multiplier = product, with one space between each part. Use the lowercase letter x. The number is from 0 to 20; the row count is from 1 to 12.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+number = int(input())
+rows = int(input())
+i = 1
+while i <= rows:
+    print(number, "x", i, "=", number * i)
+    i += 1
+```
+
+
+
+#### 8  - Count the Collatz Steps
+Start from a whole number n from 1 to 10000. While it is not 1, replace it: an even number is halved, and an odd number becomes three times itself plus one.
+```
+n = int(input())
+
+steps = 0
+while n != 1:
+    if n % 2 == 0:
+        n = n // 2
+    else:
+        n = 3 * n + 1
+    steps += 1
+print(f"Steps: {steps}")
+```
+
+
+
+#### 7 - Count Down to Liftoff
+Read a whole number n from 1 to 20. Print the numbers from n down to 1, one per line, then print Liftoff!.
+
+```
+n = int(input())
+
+for i in range(n, 0, -1):
+    print(i)
+print("Liftoff!")
+```
+
 #### 6 - Add Up the Even Numbers
 Read a whole number n from 0 to 1000. Add up every even number from 2 to n (including n when it is even) and print Sum: followed by the total.
 
