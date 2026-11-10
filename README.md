@@ -4,6 +4,15 @@
 
 ### November
 
+#### 10 - Print a Times Table Row
+Read a whole number n from 1 to 12. Print its times table from 1 to 10, one line each, in the form n x i = result.
+```
+n = int(input())
+
+for i in range(1, 11):
+    print(f"{n} x {i} = {n * i}")
+```
+
 #### 9 - Print a Numbered Multiplication Table
 Read a number and a row count on separate lines. For each multiplier from 1 through the row count, print number x multiplier = product, with one space between each part. Use the lowercase letter x. The number is from 0 to 20; the row count is from 1 to 12.
 
