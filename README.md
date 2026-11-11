@@ -4,6 +4,22 @@
 
 ### November
 
+#### 11 - Count Positive Values in a Sized Input
+Read a count n, then read exactly n integers, one per line. Print how many of those integers are strictly positive. Zero does not count. The count is from 0 to 20; each following value is from -100 to 100. When the count is zero, print 0.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+n = int(input())
+positive = 0
+i = 0
+while i < n:
+    value = int(input())
+    if value > 0:
+        positive += 1
+    i += 1
+print(positive)
+```
+
 #### 10 - Print a Times Table Row
 Read a whole number n from 1 to 12. Print its times table from 1 to 10, one line each, in the form n x i = result.
 ```
