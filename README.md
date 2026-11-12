@@ -4,6 +4,23 @@
 
 ### November
 
+#### 12 - List Every Row and Seat
+Read a row count and a seats-per-row count on separate lines. Number both rows and seats starting at 1. Print every pair as row seat, with one space between the numbers and one pair per line. Complete each row in increasing seat order before moving to the next row. Both counts are from 1 to 5.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+
+```
+rows = int(input())
+seats = int(input())
+row = 1
+while row <= rows:
+    seat = 1
+    while seat <= seats:
+        print(row, seat)
+        seat += 1
+    row += 1
+```
+
 #### 11 - Count Positive Values in a Sized Input
 Read a count n, then read exactly n integers, one per line. Print how many of those integers are strictly positive. Zero does not count. The count is from 0 to 20; each following value is from -100 to 100. When the count is zero, print 0.
 
