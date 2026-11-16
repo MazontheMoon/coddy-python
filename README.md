@@ -4,6 +4,105 @@
 
 ### November
 
+#### 16 Market Booth Analysis
+Create a program that helps a market vendor analyze three pieces of information about their booth and business.
+
+Input:
+
+First line: an integer representing the booth number
+Second line: two integers separated by a space, representing temperature readings from two market sections
+Third line: an integer representing the year the vendor started their business
+Output:
+
+First line: valid if the booth number is a triangular number (1, 3, 6, 10, 15, ...), otherwise invalid
+Second line: the temperature reading with the larger absolute value (if both have equal absolute values, print the greater numeric value)
+Third line: modern if the year is in the 21st century (2001-2100), otherwise traditional
+Note: A triangular number is a number that can be represented as n × (n + 1) / 2 for some positive integer n.
+```
+# Read inputs
+booth_number = int(input())
+temp_line = input().split()
+temp1 = int(temp_line[0])
+temp2 = int(temp_line[1])
+year = int(input())
+
+# Check if booth number is triangular
+# A triangular number satisfies: n * (n + 1) / 2 = booth_number
+# So: n^2 + n - 2*booth_number = 0
+# Using quadratic formula: n = (-1 + sqrt(1 + 8*booth_number)) / 2
+# n must be a positive integer
+is_triangular = False
+n = 1
+while n * (n + 1) // 2 <= booth_number:
+    if n * (n + 1) // 2 == booth_number:
+        is_triangular = True
+        break
+    n += 1
+
+if is_triangular:
+    print("valid")
+else:
+    print("invalid")
+
+# Find temperature with larger absolute value
+abs1 = abs(temp1)
+abs2 = abs(temp2)
+
+if abs1 > abs2:
+    print(temp1)
+elif abs2 > abs1:
+    print(temp2)
+else:
+    # Equal absolute values, print the greater numeric value
+    print(max(temp1, temp2))
+
+# Check if year is in 21st century (2001-2100)
+if 2001 <= year <= 2100:
+    print("modern")
+else:
+    print("traditional")
+```
+
+#### 15 - Read Values Until the Stop Marker
+Read integers one per line until a value of 0 appears. Print the sum of the preceding values. The stop marker is not part of the sum. There are 0-20 values before it, each from -100 to 100 and nonzero. Input ends with the stop marker. If it is the first value, print 0.
+```
+value = int(input())
+total = 0
+while value != 0:
+    total += value
+    value = int(input())
+print(total)
+```
+
+#### 14 - Total Every Integer in an Inclusive Range
+Read the first and last integers of a range on separate lines. Print the sum of every integer in that range, including both endpoints. Both bounds are from -100 to 100, and the first does not exceed the last. For first 2 and last 4, print 9.
+
+End each output line with a newline. Print only the requested output, with no input prompts.
+```
+first = int(input())
+last = int(input())
+total = 0
+i = first
+while i <= last:
+    total += i
+    i += 1
+print(total)
+```
+
+#### 13 - Count the Multiples of Three
+Read two whole numbers a and b on separate lines, with a not greater than b. Both are from -100 to 100.
+
+Count how many numbers from a to b, including both ends, are divisible by 3, and print Count: followed by that number.
+```
+a = int(input())
+b = int(input())
+
+count = 0
+for number in range(a, b + 1):
+    if number % 3 == 0:
+        count += 1
+print(f"Count: {count}")
+```
 #### 12 - List Every Row and Seat
 Read a row count and a seats-per-row count on separate lines. Number both rows and seats starting at 1. Print every pair as row seat, with one space between the numbers and one pair per line. Complete each row in increasing seat order before moving to the next row. Both counts are from 1 to 5.
 
