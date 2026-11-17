@@ -4,7 +4,21 @@
 
 ### November
 
-#### 16 Market Booth Analysis
+#### 17  Choose an Age Band
+Complete entry_price(age). Return an admission price in coins: ages below 5 pay 0; ages 5-17 pay 8; ages 18-64 pay 12; ages 65 and above pay 6. Age is from 0 to 120.
+
+```
+def entry_price(age):
+    if age < 5:
+        return 0
+    if age < 18:
+        return 8
+    if age < 65:
+        return 12
+    return 6
+```
+
+#### - 16 Market Booth Analysis
 Create a program that helps a market vendor analyze three pieces of information about their booth and business.
 
 Input:
