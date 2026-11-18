@@ -4,7 +4,32 @@
 
 ### November
 
-#### 17  Choose an Age Band
+#### 18 - Sleepy Morning Swim Simulator
+Create a function named morning_swim that receives laps and energy_level as its parameters.
+
+The function simulates a sleepy morning swim in the lake, taking into account the swimmer's energy level and the number of laps they plan to swim.
+
+The function should use a loop to go through each lap, implementing different behaviors based on the swimmer's energy level. It should then return a formatted string describing the swim session.
+
+Parameters:
+laps (int): The number of laps the swimmer plans to do. This should be a positive integer.
+energy_level (str): The swimmer's energy level. This should be one of three strings: "high", "medium", or "low".
+Go through the planned laps numbered 1 to laps and apply these rules based on the energy level:
+"high": the swimmer completes every lap and takes no breaks.
+"medium": the swimmer completes every lap and takes a break after every lap whose number is a multiple of 3 (laps 3, 6, 9, ...).
+"low": on every lap whose number is a multiple of 4, the swimmer takes a break. The swimmer then skips every even-numbered lap (use continue), so only odd-numbered laps are completed. A break on a skipped lap still counts.
+Return a string in exactly this format:
+
+Laps completed: {completed}, Breaks taken: {breaks}. {comment}
+
+where the comment depends on the energy level:
+
+"high": Great job! You completed all laps without breaks.
+"medium": Nice work! You took some breaks but still finished strong.
+"low": Well done! You managed to swim despite low energy.
+For example, morning_swim(8, "low") returns Laps completed: 4, Breaks taken: 2. Well done! You managed to swim despite low energy.
+
+#### 17 - Choose an Age Band
 Complete entry_price(age). Return an admission price in coins: ages below 5 pay 0; ages 5-17 pay 8; ages 18-64 pay 12; ages 65 and above pay 6. Age is from 0 to 120.
 
 ```
@@ -18,7 +43,7 @@ def entry_price(age):
     return 6
 ```
 
-#### - 16 Market Booth Analysis
+#### 16 - Market Booth Analysis
 Create a program that helps a market vendor analyze three pieces of information about their booth and business.
 
 Input:
