@@ -4,6 +4,14 @@
 
 ### November
 
+#### 19 - Change From a Purchase
+Complete purchase_change(paid, price, quantity). Return the change after buying quantity items at price coins each and paying paid coins. Price and quantity are each from 0 to 100. Paid is from the total cost through 20000. No tax is added.
+
+```
+def purchase_change(paid, price, quantity):
+    return paid - price * quantity
+```
+
 #### 18 - Sleepy Morning Swim Simulator
 Create a function named morning_swim that receives laps and energy_level as its parameters.
 
