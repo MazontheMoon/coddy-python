@@ -4,6 +4,59 @@
 
 ### November
 
+#### 23 - Calculate a Rectangle Boundary Length
+Complete rectangle_boundary(width, height). Return the total length of the four sides of a rectangle. Width and height are integers from 1 to 1000, measured in the same units. For width 3 and height 5, return 16
+```
+def rectangle_boundary(width, height):
+    return 2 * (width + height)
+```
+
+#### 22 - Baseball Equipment Inventory Update
+Write a function update_inventory that takes equipment_name, current_count, change_amount and returns a formatted inventory string.
+
+The function updates the equipment count by adding or subtracting the change amount, then returns the result in a specific format.
+
+Parameters:
+equipment_name (str): Name of the baseball equipment
+current_count (int): Current number of items in inventory
+change_amount (int): Amount to add (positive) or remove (negative)
+Returns: Formatted string showing updated inventory. Format: Equipment: [name] - Count: [updated_count]
+
+```
+def update_inventory(equipment_name, current_count, change_amount):
+    updated_count = current_count + change_amount
+    return f"Equipment: {equipment_name} - Count: {updated_count}"
+```
+
+#### 21 - Increasing Weekly Deposits
+Complete saved_after_weeks(start, deposit, weeks). Start with start coins. Deposit deposit coins in week one, one more coin in week two, and continue increasing each deposit by one. Return the balance after weeks weeks. Start and deposit are from 0 to 1000; weeks is from 0 to 100. Use a loop.
+
+```
+def saved_after_weeks(start, deposit, weeks):
+    balance = start
+    current = deposit
+    week = 0
+    while week < weeks:
+        balance += current
+        current += 1
+        week += 1
+    return balance
+
+```
+
+#### 20 - Sum a Stepped Countdown
+Complete countdown_total(start, step). Add start, then repeatedly subtract step and add the next value while it is positive. Return the sum. For start 10 and step 3, return 10+7+4+1 = 22. Start is from 0 to 1000; step is from 1 to 100.
+
+```
+def countdown_total(start, step):
+    value = start
+    total = 0
+    while value > 0:
+        total += value
+        value -= step
+    return total
+```
+
 #### 19 - Change From a Purchase
 Complete purchase_change(paid, price, quantity). Return the change after buying quantity items at price coins each and paying paid coins. Price and quantity are each from 0 to 100. Paid is from the total cost through 20000. No tax is added.
 
