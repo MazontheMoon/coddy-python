@@ -4,6 +4,14 @@
 
 ### November
 
+#### 24 - Hours Into Minutes
+Complete elapsed_minutes(hours, minutes). Return the total number of minutes represented by hours and minutes. Hours is from 0 to 23, and minutes is from 0 to 59. For 2 hours and 15 minutes, return 135.
+
+```
+def elapsed_minutes(hours, minutes):
+    return hours * 60 + minutes
+```
+
 #### 23 - Calculate a Rectangle Boundary Length
 Complete rectangle_boundary(width, height). Return the total length of the four sides of a rectangle. Width and height are integers from 1 to 1000, measured in the same units. For width 3 and height 5, return 16
 ```
