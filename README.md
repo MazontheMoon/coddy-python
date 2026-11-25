@@ -4,6 +4,20 @@
 
 ### November
 
+#### 25 - Track Volunteer Hours for Health Campaign
+Write a function track_volunteer_hours that takes initial_hours, additional_hours and returns the total volunteer hours.
+
+The function calculates the updated total hours by adding the additional hours worked to the initial hour count.
+
+Parameters:
+
+initial_hours (int): Current volunteer hours logged
+additional_hours (int): New hours worked during the health campaign
+Returns: Total volunteer hours as an integer. Format: 25
+
+def track_volunteer_hours(initial_hours, additional_hours):
+    return initial_hours + additional_hours
+
 #### 24 - Hours Into Minutes
 Complete elapsed_minutes(hours, minutes). Return the total number of minutes represented by hours and minutes. Hours is from 0 to 23, and minutes is from 0 to 59. For 2 hours and 15 minutes, return 135.
 
