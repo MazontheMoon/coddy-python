@@ -4,6 +4,12 @@
 
 ### November
 
+#### 26 - Two Ticket Prices
+```
+def picnic_bill(adults, children):
+    return adults * 12 + children * 7
+```
+
 #### 25 - Track Volunteer Hours for Health Campaign
 Write a function track_volunteer_hours that takes initial_hours, additional_hours and returns the total volunteer hours.
 
